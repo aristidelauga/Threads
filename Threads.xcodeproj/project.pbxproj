@@ -11,8 +11,6 @@
 		92AE3DCB2BC0C5E700F0F7D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE3DCA2BC0C5E700F0F7D5 /* ContentView.swift */; };
 		92AE3DCD2BC0C5E800F0F7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE3DCC2BC0C5E800F0F7D5 /* Assets.xcassets */; };
 		92AE3DD02BC0C5E800F0F7D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE3DCF2BC0C5E800F0F7D5 /* Preview Assets.xcassets */; };
-		92AE3DD22BC0C5E800F0F7D5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE3DD12BC0C5E800F0F7D5 /* Persistence.swift */; };
-		92AE3DD52BC0C5E800F0F7D5 /* Threads.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AE3DD32BC0C5E800F0F7D5 /* Threads.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +19,6 @@
 		92AE3DCA2BC0C5E700F0F7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92AE3DCC2BC0C5E800F0F7D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92AE3DCF2BC0C5E800F0F7D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		92AE3DD12BC0C5E800F0F7D5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		92AE3DD42BC0C5E800F0F7D5 /* Threads.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Threads.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +54,6 @@
 				92AE3DC82BC0C5E700F0F7D5 /* ThreadsApp.swift */,
 				92AE3DCA2BC0C5E700F0F7D5 /* ContentView.swift */,
 				92AE3DCC2BC0C5E800F0F7D5 /* Assets.xcassets */,
-				92AE3DD12BC0C5E800F0F7D5 /* Persistence.swift */,
-				92AE3DD32BC0C5E800F0F7D5 /* Threads.xcdatamodeld */,
 				92AE3DCE2BC0C5E800F0F7D5 /* Preview Content */,
 			);
 			path = Threads;
@@ -143,10 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92AE3DD22BC0C5E800F0F7D5 /* Persistence.swift in Sources */,
 				92AE3DCB2BC0C5E700F0F7D5 /* ContentView.swift in Sources */,
 				92AE3DC92BC0C5E700F0F7D5 /* ThreadsApp.swift in Sources */,
-				92AE3DD52BC0C5E800F0F7D5 /* Threads.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,19 +344,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		92AE3DD32BC0C5E800F0F7D5 /* Threads.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				92AE3DD42BC0C5E800F0F7D5 /* Threads.xcdatamodel */,
-			);
-			currentVersion = 92AE3DD42BC0C5E800F0F7D5 /* Threads.xcdatamodel */;
-			path = Threads.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 92AE3DBD2BC0C5E700F0F7D5 /* Project object */;
 }
