@@ -10,6 +10,7 @@
 		922BD78D2BC9C7B5004F502E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD78C2BC9C7B5004F502E /* RegistrationView.swift */; };
 		922BD7902BC9CD24004F502E /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD78F2BC9CD24004F502E /* ThreadsTextFieldModifier.swift */; };
 		922BD7932BC9D013004F502E /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD7922BC9D013004F502E /* ThreadsTabView.swift */; };
+		92516FE92C4B053600A34404 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92516FE82C4B053600A34404 /* ThreadCell.swift */; };
 		92789F582BD9AE1500438E43 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92789F572BD9AE1500438E43 /* FeedView.swift */; };
 		92789F5E2BD9B0F400438E43 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92789F5D2BD9B0F400438E43 /* ExploreView.swift */; };
 		92789F642BD9B2E100438E43 /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92789F632BD9B2E100438E43 /* CreateThreadView.swift */; };
@@ -20,12 +21,16 @@
 		92AE3DCD2BC0C5E800F0F7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE3DCC2BC0C5E800F0F7D5 /* Assets.xcassets */; };
 		92AE3DD02BC0C5E800F0F7D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE3DCF2BC0C5E800F0F7D5 /* Preview Assets.xcassets */; };
 		92AE3DE52BC0D03600F0F7D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE3DE42BC0D03600F0F7D5 /* LoginView.swift */; };
+		92D96C532C5AC2EA0063842D /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D96C522C5AC2EA0063842D /* CircularProfileImageView.swift */; };
+		92D96C552C5AC4DF0063842D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D96C542C5AC4DF0063842D /* UserCell.swift */; };
+		92D96C582C5C3A5F0063842D /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D96C572C5C3A5F0063842D /* ProfileThreadFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		922BD78C2BC9C7B5004F502E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		922BD78F2BC9CD24004F502E /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		922BD7922BC9D013004F502E /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		92516FE82C4B053600A34404 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		92789F572BD9AE1500438E43 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		92789F5D2BD9B0F400438E43 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		92789F632BD9B2E100438E43 /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
@@ -37,6 +42,9 @@
 		92AE3DCC2BC0C5E800F0F7D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92AE3DCF2BC0C5E800F0F7D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92AE3DE42BC0D03600F0F7D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		92D96C522C5AC2EA0063842D /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		92D96C542C5AC4DF0063842D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		92D96C572C5C3A5F0063842D /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				92789F572BD9AE1500438E43 /* FeedView.swift */,
+				92516FE82C4B053600A34404 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 		92789F692BD9B36E00438E43 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				92D96C562C5C39C60063842D /* Model */,
 				92789F6A2BD9B37F00438E43 /* View */,
 			);
 			path = Profile;
@@ -220,6 +230,7 @@
 			children = (
 				92789F652BD9B32C00438E43 /* Activity */,
 				92AE3DE12BC0CFEE00F0F7D5 /* Authentication */,
+				92D96C512C5AC2CF0063842D /* Components */,
 				92789F5A2BD9B0D500438E43 /* Explore */,
 				92789F592BD9B08500438E43 /* Feed */,
 				92789F692BD9B36E00438E43 /* Profile */,
@@ -260,6 +271,23 @@
 				922BD78C2BC9C7B5004F502E /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		92D96C512C5AC2CF0063842D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				92D96C522C5AC2EA0063842D /* CircularProfileImageView.swift */,
+				92D96C542C5AC4DF0063842D /* UserCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		92D96C562C5C39C60063842D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92D96C572C5C3A5F0063842D /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,8 +363,12 @@
 				92789F582BD9AE1500438E43 /* FeedView.swift in Sources */,
 				92AE3DE52BC0D03600F0F7D5 /* LoginView.swift in Sources */,
 				92AE3DCB2BC0C5E700F0F7D5 /* ContentView.swift in Sources */,
+				92516FE92C4B053600A34404 /* ThreadCell.swift in Sources */,
 				92789F682BD9B34600438E43 /* ActivityView.swift in Sources */,
+				92D96C532C5AC2EA0063842D /* CircularProfileImageView.swift in Sources */,
+				92D96C552C5AC4DF0063842D /* UserCell.swift in Sources */,
 				92789F642BD9B2E100438E43 /* CreateThreadView.swift in Sources */,
+				92D96C582C5C3A5F0063842D /* ProfileThreadFilter.swift in Sources */,
 				922BD7932BC9D013004F502E /* ThreadsTabView.swift in Sources */,
 				922BD7902BC9CD24004F502E /* ThreadsTextFieldModifier.swift in Sources */,
 				92AE3DC92BC0C5E700F0F7D5 /* ThreadsApp.swift in Sources */,

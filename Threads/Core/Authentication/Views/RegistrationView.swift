@@ -9,8 +9,10 @@ import SwiftUI
 
 struct RegistrationView: View {
 	@Environment(\.dismiss) var dismiss
-	@State private var values = Array(repeating: "", count: 4)
-	private var placeholder = ["email", "password", "full name", "username"]
+	@State private var email = ""
+	@State private var password = ""
+	@State private var fullname = ""
+	@State private var username = ""
 
 	var body: some View {
 		VStack {
@@ -21,17 +23,22 @@ struct RegistrationView: View {
 				.frame(width: 120, height: 120)
 				.padding()
 
-			ForEach(placeholder.indices, id: \.self) { index in
-				CustomTextFieldView(placeholder: placeholder[index], initialValue: values[index])
-					.onChange(of: values[index]) { newValue in
-						values[index] = newValue
-					}
+			VStack {
+				TextField("Enter your email", text: $email)
+					.modifier(ThreadsTextFieldModifier())
+					.textInputAutocapitalization(.none)
+				TextField("Enter your passowrd", text: $password)
+					.modifier(ThreadsTextFieldModifier())
+				TextField("Enter your full name", text: $fullname)
+					.modifier(ThreadsTextFieldModifier())
+				TextField("Enter your full name", text: $username)
+					.modifier(ThreadsTextFieldModifier())
 			}
 
 			Button {
 
 			} label: {
-				Text("Login")
+				Text("Sign Up")
 					.font(.subheadline)
 					.fontWeight(.semibold)
 					.foregroundStyle(.white)
@@ -54,23 +61,6 @@ struct RegistrationView: View {
 			}
 			.padding(.vertical, 16)
 		}
-	}
-}
-
-struct CustomTextFieldView: View {
-	@State private var text: String
-	let placeholder: String
-
-
-	init(placeholder: String, initialValue: String = "") {
-		self.placeholder = placeholder
-		_text = State(initialValue: initialValue)
-	}
-
-	var body: some View {
-		TextField("Enter your \(placeholder)", text: $text)
-			.modifier(ThreadsTextFieldModifier())
-
 	}
 }
 
